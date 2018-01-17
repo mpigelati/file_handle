@@ -1,0 +1,21 @@
+addtestattribute(sanity,lte);
+#testtechnology('lte');
+
+#setSing mode pref to 4G/3G/2G in DPM
+SetModePref('wcdma', 'tdscdma', 'lte', 'gsm');
+
+#IPV6 enabled
+WriteNVItem('ipv6_enabled'=>'1');
+
+#add ipv4 w-one apn
+AddNewAPN('wirelessone','wirelessone.com','V4','DEFAULT');
+
+#add ipv6 w-one apn
+AddNewApn('wonev6','wonev6.com','V6','DEFAULT,MMS');
+
+#add ipv4v6 w-one apn
+AddNewAPN('wonev4v6','wonev4v6.com','V4V6','DEFAULT,SUPL');
+
+
+#end adb logging
+stopadblogging();

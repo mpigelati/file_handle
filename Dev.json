@@ -1,0 +1,7 @@
+{
+"AddNewAPN": {
+    "ipv4": "AddNewAPN('wirelessone','wirelessone.com','V4','DEFAULT')",
+    "ipv6": "AddNewApn('wonev6','wonev6.com','V6','DEFAULT,MMS')",
+    "ipv4v6": "AddNewAPN('wonev4v6','wonev4v6.com','V4V6','DEFAULT,SUPL')"
+  }
+}
